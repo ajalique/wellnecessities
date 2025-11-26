@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*  {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    width: 400px;
+    margin: 70px auto;
+    padding: 40px;
+    background-color: #000;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 70px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline-color: #00a38d;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #48b4a9;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: #009688;
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('images/bmi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: white;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    pointer-events: none; 
+    z-index: 0; 
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 90px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #80cbc4;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s; 
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: white;
+}
+
+.navbar ul li.home a {
+    font-family: sans-serif;
+}

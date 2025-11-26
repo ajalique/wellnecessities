@@ -1,0 +1,234 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('images/contacts.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: white;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    pointer-events: none; 
+    z-index: 0; 
+}
+.banner, .about-section {
+    position: relative;
+    z-index: 1;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 90px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #80cbc4;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s; 
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: white;
+}
+.contact-content {
+    position: relative;
+    padding: 20px 50px;
+    max-width: 600px;
+    margin: -550px auto;
+    color: white;
+    text-align: left;
+}
+
+.contact-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #009688;
+}
+
+.contact-content h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #009688;
+}
+
+.contact-content p,
+.contact-content li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.contact-content a {
+    color: #009688;
+    text-decoration: none;
+}
+
+.contact-content a:hover {
+    text-decoration: underline;
+}
+
+.contact-content ul {
+    padding-left: 20px;
+}
+
+.contact-content ul li {
+    margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #00cc99;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #009688;
+}
+
+.banner {
+  position: relative;
+  z-index: 1;
+}
+
+.content, form {
+  position: relative;
+  z-index: 2;
+}
+
+.form-card {
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent card look */
+  backdrop-filter: blur(8px); /* Frosted glass effect */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  width: 90%;
+  max-width: 450px;
+  margin: 40px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-card input,
+.form-card textarea {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 98%;
+}
+
+.form-card button {
+  background-color: #009688;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-card button:hover {
+  background-color: #009688;
+  transform: translateY(-2px);
+}
+
+.form-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.form-card h3 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
